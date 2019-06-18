@@ -1,8 +1,21 @@
 
 - 마리아 DB 오라클 모드로 실행 했을 때 함수 
 - MariaDB ( ver. > 10.3 ) 오라클 모드 실행
+
 ```
 SET SQL_MODE='ORACLE';
+```
+
+- 테스트 테이블 생성
+```
+create table TB 
+(  id varchar(10), name varchar(10) );
+``` 
+
+- 테이블에 테스트 데이터 입력
+```
+insert into TB (id, name) values ( '1' , 'AAA');
+insert into TB (id, name) values ( '2' , 'BBB');
 ```
 
 - DELIMITER(DELIMITER /)로 구분 하고 원래대로 다시 복원(DELIMITER ;)
